@@ -16,9 +16,9 @@
 
 
                 <div class="form-group">
-                    <input class="form-control" id="userEmail" name="userEmail" required email type="email" ngModel>
+                    <input class="form-control" id="userEmail" name="userEmail" required email type="email" ngModel #email ="ngModel">
                     <label class="form-control-placeholder" for="userEmail">EMAIL ID</label>
-                    <div class="invalid-feedback">Enter valid Email</div>
+                    <span class="help-block" *ngIf="!email.valid && email.touched">Enter a valid Email</span>
                 </div>
 
 
