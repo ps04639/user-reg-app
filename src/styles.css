@@ -1,0 +1,68 @@
+.btn-secondary, .btn-secondary.active {
+    background-image: none;
+    border: none;
+    outline: none;
+    font: normal 16px/normal "lato", Helvetica, sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    background: #E01563;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-control {
+    background: transparent;
+    border: none;
+    border-radius: 0%;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    box-shadow: none;
+    padding-top: 1rem !important;
+}
+
+.form-control-placeholder {
+    position: absolute;
+    top: 0;
+    padding: 7px 0 0 13px;
+    transition: all 200ms;
+    opacity: 0.5;
+}
+
+.form-control:focus+.form-control-placeholder, .form-control:valid+.form-control-placeholder {
+    font-size: 70%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+.h6 {
+    text-align: center;
+    color: #E01563;
+}
+
+.fading_line {
+    border: none;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(204, 204, 204, 0), rgba(204, 204, 204, 0.75), rgba(204, 204, 204, 0));
+}
+
+
+.main-box{
+    max-width: 95%;
+    min-width: 300px;
+    padding: 50px 30px 50px 30px;
+    margin: 50px auto;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+.form-group{
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+}

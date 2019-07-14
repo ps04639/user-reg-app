@@ -1,0 +1,63 @@
+<div class="container-fluid  main-box my-2">
+    <h6 class="h6">Let's Register You</h6>
+    <div class="col-md-6 mx-auto">
+        <hr class="fading_line">
+    </div>
+    <div class="row">
+        <form (ngSubmit) = "onRegister(formData)" #formData="ngForm">
+            <div class="col-md-9 mx-auto">
+
+
+                <div class="form-group">
+                    <input class="form-control" id="mNumber" name="mNumber" required type="text" ngModel>
+                    <label class="form-control-placeholder" for="mNumber">MOBILE NUMBER</label>
+                    <div class="invalid-feedback">Enter valid Mobile Number</div>
+                </div>
+
+
+                <div class="form-group">
+                    <input class="form-control" id="userEmail" name="userEmail" required email type="email" ngModel>
+                    <label class="form-control-placeholder" for="userEmail">EMAIL ID</label>
+                    <div class="invalid-feedback">Enter valid Email</div>
+                </div>
+
+
+                <div class="form-group">
+                    <input class="form-control" id="oneMoneyID" name="oneMoneyID" required="" type="email" ngModel>
+                    <label class="form-control-placeholder" for="oneMoneyID">Your OneMoney UserID is</label>
+                    <div class="invalid-feedback">Enter valid OneMoney ID</div>
+                </div>
+
+
+                <div class="form-group"><input class="form-control" id="password" name="password" required=""
+                        type="password" ngModel>
+                    <label class="form-control-placeholder" for="password">mPIN</label>
+                </div>
+
+
+                <div class="form-group"><input class="form-control" id="confirmPwd" name="confirmPwd" required=""
+                        type="password" ngModel>
+                    <label class="form-control-placeholder" for="confirmPwd">Confirm mPIN</label>
+                    <div class="invalid-feedback">Passwords do not match</div>
+                </div>
+
+
+                <ul>
+                    <li>We will fetch your bank account balance through Finvu which is authorized and
+                        licensed by RBI.</li>
+                    <li>Your consent is required for us to link your bank accounts and show you a single
+                        view. This consent will be valid for 12 months</li>
+                </ul>
+                <div class="form-group">
+                    <div class="form-check"><input class="form-check-input" id="termsCheck" name ="termsCheck" type="checkbox"
+                            ngModel><label class="form-check-label" for="termsCheck"> I have read &amp; accept the Terms
+                            &amp;
+                            Conditions </label></div>
+                </div>
+                <input class="btn-secondary btn-block" name="loginButton" type="submit" 
+                value="REGISTER"
+                [disabled]="!formData.valid">
+            </div>
+        </form>
+    </div>
+</div>
